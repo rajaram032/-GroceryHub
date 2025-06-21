@@ -1,0 +1,418 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  overflow-x: hidden;
+}
+.header {
+  font-size: 12px;
+  background-color: #8bc34a;
+  color: #ffffff;
+}
+
+.header .header_left {
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header .header_left a {
+  text-decoration: none;
+  margin-left: 10px;
+  color: #ffffff;
+}
+
+.header .header_left img {
+  width: 15px;
+}
+
+.header_mid {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_right {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+}
+
+.header .header_right a {
+  text-decoration: none;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.header .header_right img {
+  width: 20px;
+}
+
+.header .header_right a p {
+  font-size: 11px;
+}
+
+/* login style */
+.loginModal,
+.accountModal,
+.locationModal {
+  background-color: #adf3aff3;
+}
+.loginModal input {
+  width: 350px;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+.loginModal .modal-body input::placeholder {
+  color: #555;
+}
+
+.loginModal .modal-footer button {
+  width: 200px;
+  background-color: white;
+  color: #8bf38e;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+/* accountModal */
+#accountModal .signout_btn,
+.locationModal .address_btn {
+  width: 200px;
+  background-color: #4caf50;
+  color: #8bf38e;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  align-self: center;
+  font-weight: bold;
+}
+.accountModal a {
+  text-decoration: none;
+  color: #2b2929;
+}
+
+.locationModal .modal-footer input,
+.locationModal .modal-footer button {
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  background: white;
+}
+nav .container {
+  background-color: #ffffff;
+  color: #8bc34a;
+
+  text-align: center;
+}
+
+.navbar {
+  font-size: 13px;
+}
+.navbar a {
+  text-decoration: none;
+  color: #555;
+  font-size: 18px;
+  font-weight: bold;
+}
+.navbar a.active {
+  border-bottom: 2px solid #4caf50;
+}
+nav .navbar_left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+nav .navbar_left img {
+  width: 70px;
+  margin-right: 12px;
+}
+
+.navbar_mid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar_right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.navbar_right img {
+  width: 20px;
+}
+
+nav .navbar_right div:nth-child(2) {
+  position: relative;
+}
+
+.navbar_right div:nth-child(2) span {
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #8bc34a;
+  color: white;
+  top: -10px;
+  right: -5px;
+}
+.landing_left h1 {
+  color: #8bc34a;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 45px;
+  margin-top: 15px;
+}
+
+.landing_left h3 {
+  font-size: 17px;
+  width: 450px;
+  font-weight: bold;
+  margin-top: 15px;
+  line-height: 25px;
+}
+
+.landing_left button {
+  margin-top: 25px;
+  background-color: #8bc34a;
+  color: #ffffff;
+  transition: 0.5s ease;
+}
+
+.landing_left button:hover {
+  background-color: #8bc34a;
+  color: #ffffff;
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+
+.landing .landing_right {
+  align-content: center;
+}
+
+.landing_right img {
+  width: 340px;
+  height: 320px;
+  margin-left: -40px;
+  margin-top: -20px;
+}
+
+.banner {
+  width: 100%;
+}
+
+.category-img {
+  width: 100%;
+  /* height: 120px; */
+  object-fit: contain;
+
+  border-radius: 10px;
+}
+
+.category-label {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.section-heading {
+  color: #4caf50;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.section-title {
+  margin: 20px 0 10px;
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+.product-card {
+  background-color: #d9edc2;
+  border-radius: 12px;
+  padding: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.product-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  align-self: center;
+  overflow: hidden;
+}
+
+.product-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-top: 10px;
+  flex: 1;
+}
+
+.product-weight {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.price-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  width: 100%;
+}
+
+.product-price {
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.option-btn {
+  font-size: 0.7rem;
+  padding: 2px 8px;
+}
+
+.testmonials {
+  width: 100%;
+}
+
+.testmonials div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testmonials div p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.testmonials .symbol {
+  width: 40px;
+  margin-top: 10px;
+}
+
+.testmonials .rating {
+  width: 100px;
+  margin-top: 10px;
+}
+
+.testmonials .profile {
+  width: 100%;
+  align-self: self-start;
+  margin-top: 10px;
+}
+
+.testmonials .profile img {
+  width: 50px;
+}
+
+.bg-body-tertiary {
+  background-color: #d9edc2;
+  border: 1px solid #8bc34a;
+}
+
+footer {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+.footer_top {
+  width: 100%;
+}
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+/* Adjusting for Small Screens (Below 768px) */
+@media (max-width: 768px) {
+  /* Stack Navbar Items Vertically */
+  .navbar_left,
+  .navbar_mid,
+  .navbar_right {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .navbar_mid {
+    display: none; /* Hide links in mobile view */
+  }
+
+  .navbar_right {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar_right img {
+    width: 22px; /* Smaller icons on mobile */
+  }
+
+  .navbar-logo {
+    width: 40px; /* Smaller logo size for mobile */
+  }
+}
+
+/* Extra Small Screens (Below 576px) */
+@media (max-width: 576px) {
+  .navbar_mid {
+    display: none; /* Hide links in extra small view */
+  }
+
+  .navbar_right {
+    gap: 5px;
+  }
+}
+
+/* payment modal */
+.payment-box {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.promo-btn,
+.confirm-btn {
+  background-color: #8dc63f;
+  color: white;
+  border: none;
+}
+
+.promo-btn:hover,
+.confirm-btn:hover {
+  background-color: #79b32f;
+}
+
+.confirm-btn {
+  padding: 10px 40px;
+  font-weight: bold;
+}

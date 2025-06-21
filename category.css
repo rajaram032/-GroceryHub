@@ -1,0 +1,151 @@
+body {
+  overflow-x: hidden;
+}
+
+.category_section .grocery-heading {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.grocery-heading img {
+  width: 60px;
+}
+
+.grocery-heading h3 {
+  font-size: 36px;
+}
+
+.category_section .category-img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.category-label {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.section-heading {
+  color: #4caf50;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.category_heading {
+  text-align: start;
+  font-size: 13px;
+}
+
+#grocery .Masala_Spices,
+.dairy_beverages .Poultry,
+.dairy_beverages .Breads,
+#package_food .Breakfast_Cereals,
+#package_food .Chocolates_Candies {
+  position: relative;
+  opacity: 0.8;
+}
+
+#grocery .Masala_Spices p,
+.dairy_beverages .Poultry p,
+.dairy_beverages .Breads p,
+.Breakfast_Cereals p,
+.Chocolates_Candies p {
+  position: absolute;
+  top: 90px;
+  left: 38px;
+  font-size: 17px;
+  font-weight: bold;
+  align-self: center;
+  letter-spacing: 2px;
+}
+
+/* modal style */
+
+.cart-container {
+  padding: 2rem;
+}
+
+.cart-header {
+  margin-bottom: 2rem;
+}
+
+.cart-item {
+  background-color: #d5efb4;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #000;
+}
+
+.product-img {
+  width: 100px;
+}
+
+.btn-buy {
+  background-color: #7ac943;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  font-weight: 500;
+}
+
+.text-small {
+  font-size: 0.9rem;
+}
+
+.bill-details td {
+  padding: 4px 8px;
+}
+
+.close-btn {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* order complete modal style */
+.checkmark-circle {
+  animation: pop 0.5s ease-out;
+}
+
+.checkmark {
+  font-size: 48px;
+  color: white;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.track-btn {
+  background-color: #7ac943;
+  border: none;
+  padding: 12px 30px;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 12px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.track-btn:hover {
+  background-color: #69b634;
+}
